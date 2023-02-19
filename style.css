@@ -1,0 +1,65 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.tv{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 20px;
+	position: relative;
+}
+
+.player{
+	width: 100%;
+	max-width: 900px;
+	position: relative;
+}
+
+.player img{
+	width: 100%;
+}
+
+.player video{
+	position: absolute;
+	width: 96.0%;
+	height: 82.1%;
+	top: 2.4%;
+	left: 1.8%;
+	background: #000;
+}
+
+.video-thumb{
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	z-index: 999;
+}
+
+.video-thumb li{
+	list-style: none;
+	cursor: pointer;
+	border: 3px solid #fff;
+	margin: 0 10px;
+}
+
+.video-thumb img{
+	width: 150px;
+	opacity: .3;
+	transition: .3s;
+}
+
+.video-thumb img:hover{
+	width: 170px;
+	opacity: 1;
+}
